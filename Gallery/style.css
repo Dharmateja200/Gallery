@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color:  #337197;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  background-color: hsla(332, 80%, 77%, 0.936);
+  height: 40%;
+}
+
+.parent {
+  width: 92%;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 300px;
+  margin: 10px 34px;
+  padding: 8px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  backdrop-filter:blur(20px);
+  margin-left: 60px;
+}
+.not-child {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display:none;
+  align-items: center;
+  justify-content: center;
+  z-index:100 ;
+}
+.not-child img {
+  width: 90%;
+  max-width: 400px;
+  height: 90%;
+  max-height: 500px;
+}
+.not-child span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+img {
+  margin: -38px;
+  width: 224px;
+  height: 300px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.child {
+  margin: 2px;
+  padding: 41px;
+  height: 220px;
+  width: 147px;
+  /* background-image: url(Garp1.png);
+    background-position: center;
+    background-size: cover; */
+  background-color:rgb(234, 207, 86);
+  backdrop-filter: blur(20px);
+}
+.child img:hover {
+  transform: scale(1.1);
+  border-radius: 10%;
+}
+#foot-index {
+  background-color: rgb(187, 220, 244);
+  width: 100%;
+  height: 60px;
+  position: relative;
+  top: 300px;
+}
+#foot-index p {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top: 15px;
+}

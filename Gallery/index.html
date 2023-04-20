@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h2>Image Gallery</h2>
+    <section id="hello">
+        <div class="not-child" id="ExpandBox">
+            <img src="Garp1.png" alt="" id="Expand">
+            <span onclick="closepop()">X</span>
+        </div>
+        <section>
+        <div class="parent">
+            <div class="child">
+               <img src="Garp1.png" alt="Garp" onclick="openpop(this.src)" >
+    
+            </div>
+            <div class="child">
+                <img src="luffy.jpg" alt="luffy" onclick="openpop(this.src)">
+            </div>
+            <div class="child">
+                <img src="img2.jpg" alt="Nature" onclick="openpop(this.src)">
+            </div>
+            <div class="child">
+               <img src="img3.jpg" alt="WaterFLow" onclick="openpop(this.src)">
+            </div>
+            <div class="child">
+               <img src="img4.jpg" alt="mountain" onclick="openpop(this.src)">
+            </div>
+            <div class="child">
+                <img src="img5.jpg" alt="Water fall" onclick="openpop(this.src)" >
+            </div>
+            <div class="child">
+                <img src="img6.jpg" alt="SNow mountain" onclick="openpop(this.src)">
+            </div>
+            <div class="child">
+                <img src="img7.jpg" alt="Snow Glacier" onclick="openpop(this.src)">
+            </div>
+            <div class="child">
+                <img src="img8.jpg" alt="Dark room" onclick="openpop(this.src)">
+            </div>
+            <div class="child">
+                <img src="img9.jpg" alt="Dark lights" onclick="openpop(this.src)">
+            </div>
+            <div class="child">
+                <img src="img10.jpg" alt="Room" onclick="openpop(this.src)">
+            </div>
+            <div class="child">
+                <img src="img11.jpg" alt="house" onclick="openpop(this.src)">
+            </div>
+            <div class="child">
+                <img src="img12.jpg" alt="beach" onclick="openpop(this.src)">
+            </div>
+            <div class="child">
+                <img src="img13.jpg" alt="Car" onclick="openpop(this.src)">
+            </div>
+            <div class="child">
+                <img src="img14.jpg" alt="Vintage Car" onclick="openpop(this.src)">
+            </div>
+            <div class="child">
+                <img src="img15.jpg" alt="Spring season" onclick="openpop(this.src)">
+            </div>
+            <div class="child">
+                <img src="img16.jpg" alt="leaves" onclick="openpop(this.src)">
+            </div>
+            <div class="child">
+                <img src="Demons slayer.jpg" alt="Tanjiro" onclick="openpop(this.src)">
+            </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    <section id="foot-index">
+        <footer>
+            <p>&copy are reserved to Dharmateja</p>
+        </footer>
+    </section>
+    <script>
+        var ExpandBox=document.getElementById("ExpandBox")
+        var Expand=document.getElementById("Expand")
+        function openpop(pic){
+            ExpandBox.style.display="flex";
+            Expand.src=pic;
+        }
+        function closepop(pic){
+            ExpandBox.style.display="none"
+        }
+    </script>
+</body>
+
+</html>
